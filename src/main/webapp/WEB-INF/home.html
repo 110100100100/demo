@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/home/calculator}" method="get">
+    <input type="number" name="number1" placeholder="Number1">
+    <input type="number" name="number2" placeholder="Number2">
+    <button type="submit">Calculator</button>
+</form>
+
+<h1>Result: [[${sum}]]</h1>
+</body>
+</html>
